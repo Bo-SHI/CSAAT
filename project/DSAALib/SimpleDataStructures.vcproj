@@ -22,7 +22,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\lib\DSAALib"
-			IntermediateDirectory="$(TempOutDir)\GSLibOut\$(PlatformName)\$(ProjectName)\$(ConfigurationName)"
+			IntermediateDirectory="$(TempOutDir)\DSAALibOut\$(PlatformName)\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="4"
 			CharacterSet="2"
 			>
