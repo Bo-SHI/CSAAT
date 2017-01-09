@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleDataStructures", "DSAALib\SimpleDataStructures.vcproj", "{ECAE9A19-FF2F-46AE-B64A-60681E78944E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "server\server.vcproj", "{0FCD772A-DB5A-455E-8B90-EA394661BC8E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ECAE9A19-FF2F-46AE-B64A-60681E78944E} = {ECAE9A19-FF2F-46AE-B64A-60681E78944E}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +24,14 @@ Global
 		{ECAE9A19-FF2F-46AE-B64A-60681E78944E}.Release|Win32.Build.0 = Release|Win32
 		{ECAE9A19-FF2F-46AE-B64A-60681E78944E}.Release|x64.ActiveCfg = Release|x64
 		{ECAE9A19-FF2F-46AE-B64A-60681E78944E}.Release|x64.Build.0 = Release|x64
+		{0FCD772A-DB5A-455E-8B90-EA394661BC8E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FCD772A-DB5A-455E-8B90-EA394661BC8E}.Debug|Win32.Build.0 = Debug|Win32
+		{0FCD772A-DB5A-455E-8B90-EA394661BC8E}.Debug|x64.ActiveCfg = Debug|x64
+		{0FCD772A-DB5A-455E-8B90-EA394661BC8E}.Debug|x64.Build.0 = Debug|x64
+		{0FCD772A-DB5A-455E-8B90-EA394661BC8E}.Release|Win32.ActiveCfg = Release|Win32
+		{0FCD772A-DB5A-455E-8B90-EA394661BC8E}.Release|Win32.Build.0 = Release|Win32
+		{0FCD772A-DB5A-455E-8B90-EA394661BC8E}.Release|x64.ActiveCfg = Release|x64
+		{0FCD772A-DB5A-455E-8B90-EA394661BC8E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
