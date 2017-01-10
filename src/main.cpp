@@ -1,13 +1,14 @@
 #include <iostream>
-#include <chapter8.h>
+#include <chapter8UnitTest.h>
 
 using namespace std;
 
 int main()
 {
-	int arr[] = {1, 2, 3, 4, 5, 6};
-	int res = SimpleDataStructures::Sequential_Search(arr, 6, 4);
+	SimpleDataStructuresTest::Chapter8UnitTest::Sequential_Search_Unit_Test();
+	SimpleDataStructuresTest::Chapter8UnitTest::Binary_Search_Unit_test();
 
-	std::cout << res << std::endl;
+	system("Pause"); 
+
 	return 0;
 }

@@ -293,12 +293,20 @@
 					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter8.h"
 					>
 				</File>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter8UnitTest.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="src"
 				>
 				<File
 					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter8.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter8UnitTest.cpp"
 					>
 				</File>
 			</Filter>
