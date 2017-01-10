@@ -7,48 +7,40 @@ namespace SimpleDataStructures
 int Sequential_Search(int* a, int n, int key)
 {
 	if(NULL == a) {
-		return -1;
+		return 0;
 	}
 	
 	for(int i = 0; i < n; ++i) {
 		if(*(a+i) == key) {
-			return i;
+			return i + 1;
 		}
 	}
 	
-	return -1;
+	return 0;
 }
 
 int Binary_Search( int* a, int n, int key )
 {
 	if(NULL == a) {
-		return -1;
-	}
-	
-	if(n == 1) {
-		if(key == *(a + 0)) {
-			return 0;
-		} else {
-			return -1;
-		}
+		return 0;
 	}
 
-	int low = 0;
-	int high = n - 1;
+	int low = 1;
+	int high = n;
 
 	while(low <= high) {
 		int mid = (high + low) / 2;
 
-		if(key < *(a+mid)) {
-			high = mid - 1;
-		} else if(key > *(a+mid)) {
-			low = mid + 1;
+		if(key < *(a+mid - 1)) {
+			high = mid;
+		} else if(key > *(a+mid - 1)) {
+			low = mid;
 		} else {
 			return mid;
 		}
 	}
 
-	return -1;
+	return 0;
 }
 
 }
