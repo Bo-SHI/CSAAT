@@ -32,9 +32,33 @@ int Binary_Search( int* a, int n, int key )
 		int mid = (high + low) / 2;
 
 		if(key < *(a+mid - 1)) {
-			high = mid;
+			high = mid - 1;
 		} else if(key > *(a+mid - 1)) {
-			low = mid;
+			low = mid + 1;
+		} else {
+			return mid;
+		}
+	}
+
+	return 0;
+}
+
+int Interpolation_Search( int* a, int n, int key )
+{
+	if(NULL == a) {
+		return 0;
+	}
+
+	int low = 1;
+	int high = n;
+
+	for(low <= high) {
+		int mid = low + (key - *(a + low - 1)) / (*(a + high - 1) - *(a + low - 1)) * (high - low);
+
+		if(key < *(a + mid - 1)) {
+			high = mid - 1;
+		} else if(key > *(a + mid - 1)) {
+			low = mid + 1;
 		} else {
 			return mid;
 		}
