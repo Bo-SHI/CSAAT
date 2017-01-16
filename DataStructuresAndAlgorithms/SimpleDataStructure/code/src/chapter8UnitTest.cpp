@@ -16,4 +16,14 @@ void Chapter8UnitTest::Binary_Search_Unit_test()
 	std::cout << res << std::endl;
 }
 
+void Chapter8UnitTest::Binary_Sort_Tree_Unit_Test()
+{
+	SimpleDataStructures::BinarySortTree* binarySortTree = new SimpleDataStructures::BinarySortTree;
+	binarySortTree->add(5);
+	binarySortTree->add(6);
+	binarySortTree->add(7);
+	binarySortTree->add(3);
+	binarySortTree->add(1);
+}
+
 }

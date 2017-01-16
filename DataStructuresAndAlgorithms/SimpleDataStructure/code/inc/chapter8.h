@@ -13,6 +13,35 @@ int Binary_Search(int* a, int n, int key);
 /* 插值查找 a为有序数组 n为数组的元素个数 key为要超找的值 */
 int Interpolation_Search(int* a, int n, int key);
 
+/* 二叉排序树 */
+struct BinaryNode
+{
+	int value;
+	BinaryNode* left;
+	BinaryNode* right;
+
+	BinaryNode(int _val) : value(_val), left(NULL), right(NULL) {}
+};
+
+class BinarySortTree
+{
+public:
+	BinarySortTree() : root (NULL) {}
+
+	bool add(int _val);
+	bool del(int _val);
+	bool search(int _val);
+	//bool 
+
+private:
+	
+	bool _search(BinaryNode* node, int _val);
+	BinaryNode* _searchParentNode(BinaryNode* parentNode, int _val);
+
+private:
+	BinaryNode* root;
+};
+
 }
 
 #endif

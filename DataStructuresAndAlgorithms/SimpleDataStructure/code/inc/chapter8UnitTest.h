@@ -15,7 +15,8 @@ namespace SimpleDataStructuresTest
 		static void Sequential_Search_Unit_Test();
 		// test Binary Search
 		static void Binary_Search_Unit_test();
-
+		// test Binary Sort Tree
+		static void Binary_Sort_Tree_Unit_Test();
 	};
 }
 
