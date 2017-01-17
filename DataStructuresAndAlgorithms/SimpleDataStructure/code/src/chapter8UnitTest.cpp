@@ -19,18 +19,32 @@ void Chapter8UnitTest::Binary_Search_Unit_test()
 void Chapter8UnitTest::Binary_Sort_Tree_Unit_Test()
 {
 	SimpleDataStructures::BinarySortTree* binarySortTree = new SimpleDataStructures::BinarySortTree;
-	binarySortTree->insert(5);
-	binarySortTree->insert(6);
-	binarySortTree->insert(7);
-	binarySortTree->insert(3);
-	binarySortTree->insert(1);
+	binarySortTree->insert(62);
+	binarySortTree->insert(58);
+	binarySortTree->insert(88);
+	binarySortTree->insert(47);
+	binarySortTree->insert(73);
+	binarySortTree->insert(99);
+	binarySortTree->insert(35);
+	binarySortTree->insert(51);
+	binarySortTree->insert(93);
+	binarySortTree->insert(29);
+	binarySortTree->insert(37);
+	binarySortTree->insert(49);
+	binarySortTree->insert(56);
+	binarySortTree->insert(36);
+	binarySortTree->insert(48);
+	binarySortTree->insert(50);
 
 	SimpleDataStructures::BinaryNode* objNode = NULL;
 	SimpleDataStructures::BinaryNode* objParentNode = NULL;
+
 	binarySortTree->find(1, &objParentNode, &objNode);
 
-	int a = 1;
+	binarySortTree->del(47);
 
+	delete binarySortTree;
+	binarySortTree = NULL;
 }
 
 }

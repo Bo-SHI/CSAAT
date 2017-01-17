@@ -104,11 +104,6 @@ bool BinarySortTree::add( int _val )
 	return false;
 }
 
-bool BinarySortTree::del( int _val )
-{
-	return false;
-}
-
 bool BinarySortTree::search( int _val )
 {
 	return _search(root, _val);
@@ -258,6 +253,69 @@ bool BinarySortTree::insert( int _val )
 	}
 
 	return false;
+}
+
+bool BinarySortTree::del( int _val )
+{
+	return _del(&root, _val);
+}
+
+bool BinarySortTree::_del( BinaryNode** _node, int _val )
+{
+	if(NULL == *_node) {
+		return false;
+	}
+
+	if(_val == (*_node)->value) {
+		return _del(_node);		
+	} else if(_val < (*_node)->value) {
+		return _del(&((*_node)->left), _val);
+	} else {
+		return _del(&((*_node)->right), _val);
+	}
+
+	return false;
+}
+
+bool BinarySortTree::_del( BinaryNode** _node )
+{
+	BinaryNode* node = NULL;
+	BinaryNode* prevNode = NULL;
+
+	if((*_node)->left == NULL && (*_node)->right == NULL) {
+		delete *_node;
+		*_node = NULL;
+	} else if((*_node)->right == NULL) {
+		node = *_node;
+		*_node = (*_node)->left;
+		delete node;
+		node = NULL;
+	} else if((*_node)->left == NULL) {
+		node = *_node;
+		*_node = (*_node)->right;
+		delete node;
+		node = NULL;
+	} else {
+		node = *_node;
+		prevNode = (*_node)->left;
+		while(prevNode->right) {
+			node = prevNode;
+			prevNode = node->right;
+		}
+
+		(*_node)->value = prevNode->value;
+
+		if(node != *_node) {
+			node->right = prevNode->left;
+		} else {
+			node->left = prevNode->left;
+		}
+
+		delete prevNode;
+		prevNode = NULL;
+	}
+
+	return true;
 }
 
 

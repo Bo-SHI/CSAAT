@@ -31,7 +31,6 @@ public:
 
 	//{{ 临时接口 废弃
 	bool add(int _val);
-	bool del(int _val);
 	bool search(int _val);
 	//}}
 
@@ -46,6 +45,9 @@ public:
 	// 内存释放
 	bool clear();
 
+	// 删除节点
+	bool del(int _val);
+
 private:
 	//{{ 临时接口 废弃
 	bool _search(BinaryNode* node, int _val);
@@ -56,6 +58,8 @@ private:
 
 	bool _find(BinaryNode* _node, int _val, BinaryNode** _objParentNode, BinaryNode** _objNode);
 
+	bool _del(BinaryNode** _node, int _val);
+	bool _del(BinaryNode** _node);
 private:
 	BinaryNode* root;
 };
