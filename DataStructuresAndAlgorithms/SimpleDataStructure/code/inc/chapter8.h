@@ -27,16 +27,19 @@ class BinarySortTree
 {
 public:
 	BinarySortTree() : root (NULL) {}
+	~BinarySortTree();
 
 	bool add(int _val);
 	bool del(int _val);
 	bool search(int _val);
-	//bool 
+	bool clear();
+ 
 
 private:
 	
 	bool _search(BinaryNode* node, int _val);
 	BinaryNode* _searchParentNode(BinaryNode* parentNode, int _val);
+	bool _clear(BinaryNode* node);
 
 private:
 	BinaryNode* root;

@@ -69,6 +69,11 @@ int Interpolation_Search( int* a, int n, int key )
 
 /* Binary Sort Tree*/
 
+BinarySortTree::~BinarySortTree()
+{
+	clear();
+}
+
 bool BinarySortTree::add( int _val )
 {
 	BinaryNode* node = new BinaryNode(_val);
@@ -157,6 +162,37 @@ BinaryNode* BinarySortTree::_searchParentNode( BinaryNode* parentNode, int _val 
 	}
 
 	return NULL;
+}
+
+bool BinarySortTree::clear()
+{
+	if(NULL == root) {
+		return true;
+	}
+
+	return _clear(root);
+}
+
+bool BinarySortTree::_clear( BinaryNode* node )
+{
+	if (NULL == node) {
+		return true;
+	}
+
+	BinaryNode* left = node->left;
+	BinaryNode* right = node->right;
+
+	delete node;
+
+	if(NULL != left) {
+		_clear(left);
+	}
+
+	if(NULL != right) {
+		_clear(right);
+	}
+
+	return true;
 }
 
 }
