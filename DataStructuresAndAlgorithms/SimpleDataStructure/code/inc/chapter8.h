@@ -33,13 +33,17 @@ public:
 	bool del(int _val);
 	bool search(int _val);
 	bool clear();
- 
+
+	// _val 值 _objParentNode 双亲节点 _objNode 目标节点
+	bool find(int _val, BinaryNode** _objParentNode, BinaryNode** _objNode);
 
 private:
 	
 	bool _search(BinaryNode* node, int _val);
 	BinaryNode* _searchParentNode(BinaryNode* parentNode, int _val);
 	bool _clear(BinaryNode* node);
+
+	bool _find(BinaryNode* _node, int _val, BinaryNode** _objParentNode, BinaryNode** _objNode);
 
 private:
 	BinaryNode* root;

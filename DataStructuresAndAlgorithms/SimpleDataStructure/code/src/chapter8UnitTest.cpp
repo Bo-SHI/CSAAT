@@ -24,6 +24,13 @@ void Chapter8UnitTest::Binary_Sort_Tree_Unit_Test()
 	binarySortTree->add(7);
 	binarySortTree->add(3);
 	binarySortTree->add(1);
+
+	SimpleDataStructures::BinaryNode* objNode = NULL;
+	SimpleDataStructures::BinaryNode* objParentNode = NULL;
+	binarySortTree->find(1, &objParentNode, &objNode);
+
+	int a = 1;
+
 }
 
 }

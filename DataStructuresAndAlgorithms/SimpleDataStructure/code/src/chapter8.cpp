@@ -195,4 +195,39 @@ bool BinarySortTree::_clear( BinaryNode* node )
 	return true;
 }
 
+bool BinarySortTree::find( int _val, BinaryNode** _objParentNode, BinaryNode** _objNode )
+{
+	return _find(root, _val, _objParentNode, _objNode);
+}
+
+bool BinarySortTree::_find( BinaryNode* _node, int _val, BinaryNode** _objParentNode, BinaryNode** _objNode )
+{
+	if(NULL == _node) {
+		return false;
+	}
+
+	if(_val == _node->value) {
+		
+		if(_node == root) {
+			*_objParentNode = root;	
+		}
+
+		*_objNode = _node;
+		return true;
+	}
+
+	*_objParentNode = _node;
+
+	if(_val < _node->value) {
+		return _find(_node->left, _val, _objParentNode, _objNode);
+	}
+
+	if(_val > _node->value) {
+		return _find(_node->right, _val, _objParentNode, _objNode);
+	}
+
+	return false;
+}
+
+
 }
