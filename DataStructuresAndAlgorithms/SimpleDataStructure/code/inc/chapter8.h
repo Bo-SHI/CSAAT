@@ -35,7 +35,11 @@ public:
 	bool clear();
 
 	// _val 值 _objParentNode 双亲节点 _objNode 目标节点
+	// 查找值为 _val 的目标节点以及双亲节点
 	bool find(int _val, BinaryNode** _objParentNode, BinaryNode** _objNode);
+
+	// 插入新的节点 若已存在值为_val的节点 插入失败
+	bool insert(int _val);
 
 private:
 	

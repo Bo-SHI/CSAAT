@@ -19,11 +19,11 @@ void Chapter8UnitTest::Binary_Search_Unit_test()
 void Chapter8UnitTest::Binary_Sort_Tree_Unit_Test()
 {
 	SimpleDataStructures::BinarySortTree* binarySortTree = new SimpleDataStructures::BinarySortTree;
-	binarySortTree->add(5);
-	binarySortTree->add(6);
-	binarySortTree->add(7);
-	binarySortTree->add(3);
-	binarySortTree->add(1);
+	binarySortTree->insert(5);
+	binarySortTree->insert(6);
+	binarySortTree->insert(7);
+	binarySortTree->insert(3);
+	binarySortTree->insert(1);
 
 	SimpleDataStructures::BinaryNode* objNode = NULL;
 	SimpleDataStructures::BinaryNode* objParentNode = NULL;

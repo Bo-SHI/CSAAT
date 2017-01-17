@@ -229,5 +229,34 @@ bool BinarySortTree::_find( BinaryNode* _node, int _val, BinaryNode** _objParent
 	return false;
 }
 
+bool BinarySortTree::insert( int _val )
+{
+	BinaryNode* parentNode = NULL;
+	BinaryNode* node = NULL;
+
+	if(!_find(root, _val, &parentNode, &node)) {
+		
+		node = new BinaryNode(_val);
+		if(node == NULL) {
+			return false;
+		}
+
+		if(NULL == parentNode) {
+			root = node;
+		} else {
+			
+			if(_val < parentNode->value) {
+				parentNode->left = node;
+			} else {
+				parentNode->right = node;
+			}
+		}
+
+		return true;
+	}
+
+	return false;
+}
+
 
 }
