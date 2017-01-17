@@ -183,6 +183,7 @@ bool BinarySortTree::_clear( BinaryNode* node )
 	BinaryNode* right = node->right;
 
 	delete node;
+	node = NULL;
 
 	if(NULL != left) {
 		_clear(left);
@@ -237,6 +238,7 @@ bool BinarySortTree::insert( int _val )
 	if(!_find(root, _val, &parentNode, &node)) {
 		
 		node = new BinaryNode(_val);
+
 		if(node == NULL) {
 			return false;
 		}

@@ -29,22 +29,29 @@ public:
 	BinarySortTree() : root (NULL) {}
 	~BinarySortTree();
 
+	//{{ 临时接口 废弃
 	bool add(int _val);
 	bool del(int _val);
 	bool search(int _val);
-	bool clear();
+	//}}
 
-	// _val 值 _objParentNode 双亲节点 _objNode 目标节点
+	// _val<==>值 _objParentNode<==>双亲节点 _objNode<==>目标节点
 	// 查找值为 _val 的目标节点以及双亲节点
-	bool find(int _val, BinaryNode** _objParentNode, BinaryNode** _objNode);
+	// 指针作为形参 实质上也是值传递 要想改变指针实参 传递指针的指针
+	bool find(int _val, BinaryNode** _objParentNode = NULL, BinaryNode** _objNode = NULL);
 
 	// 插入新的节点 若已存在值为_val的节点 插入失败
 	bool insert(int _val);
+	
+	// 内存释放
+	bool clear();
 
 private:
-	
+	//{{ 临时接口 废弃
 	bool _search(BinaryNode* node, int _val);
 	BinaryNode* _searchParentNode(BinaryNode* parentNode, int _val);
+	//}
+
 	bool _clear(BinaryNode* node);
 
 	bool _find(BinaryNode* _node, int _val, BinaryNode** _objParentNode, BinaryNode** _objNode);
