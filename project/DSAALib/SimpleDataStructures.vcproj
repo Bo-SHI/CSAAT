@@ -290,6 +290,18 @@
 				Name="inc"
 				>
 				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\baseDef.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter6.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter6UnitTest.h"
+					>
+				</File>
+				<File
 					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter8.h"
 					>
 				</File>
@@ -301,6 +313,14 @@
 			<Filter
 				Name="src"
 				>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter6.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter6UnitTest.cpp"
+					>
+				</File>
 				<File
 					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter8.cpp"
 					>

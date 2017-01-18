@@ -1,6 +1,7 @@
 #ifndef __SIMPLEDATASTRUCTURES_CHAPTER_8__
 #define __SIMPLEDATASTRUCTURES_CHAPTER_8__
 
+#include <baseDef.h>
 
 namespace SimpleDataStructures
 {
@@ -14,15 +15,6 @@ int Binary_Search(int* a, int n, int key);
 int Interpolation_Search(int* a, int n, int key);
 
 /* 二叉排序树 */
-struct BinaryNode
-{
-	int value;
-	BinaryNode* left;
-	BinaryNode* right;
-
-	BinaryNode(int _val) : value(_val), left(NULL), right(NULL) {}
-};
-
 class BinarySortTree
 {
 public:
@@ -47,6 +39,8 @@ public:
 
 	// 删除节点
 	bool del(int _val);
+
+	BinaryNode* getRootNode() const {return root;}
 
 private:
 	//{{ 临时接口 废弃
