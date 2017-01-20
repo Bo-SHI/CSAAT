@@ -290,10 +290,18 @@
 				RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc\baseDef.h"
 				>
 			</File>
+			<File
+				RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc\exerUnitTest.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="src"
 			>
+			<File
+				RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\src\exerUnitTest.cpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="exercise24"
