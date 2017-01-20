@@ -51,9 +51,31 @@ void PreOrderTraverse( BinaryNode* node )
 		return ;
 	}
 
+	std::cout << node->value << " ";
+	PreOrderTraverse(node->left);
+	PreOrderTraverse(node->right);
+}
+
+void InOrderTraverse( BinaryNode* node )
+{
+	if(NULL == node) {
+		return;
+	}
+
 	PreOrderTraverse(node->left);
 	std::cout << node->value << " ";
 	PreOrderTraverse(node->right);
+}
+
+void PostOrderTraverse( BinaryNode* node )
+{
+	if(NULL == node) {
+		return;
+	}
+
+	PreOrderTraverse(node->left);
+	PreOrderTraverse(node->right);
+	std::cout << node->value << " ";
 }
 
 }
