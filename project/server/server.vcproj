@@ -44,7 +44,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc;"
+				AdditionalIncludeDirectories="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc;..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -64,7 +64,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="SimpleDataStructures.lib"
+				AdditionalDependencies="SimpleDataStructures.lib SwordOffer.lib"
 				OutputFile="$(OutDir)\$(ProjectName)_d.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\lib\DSAALib\$(PlatformName)\$(ConfigurationName)"

@@ -2,8 +2,8 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="SimpleDataStructures"
-	ProjectGUID="{ECAE9A19-FF2F-46AE-B64A-60681E78944E}"
+	Name="SwordOffer"
+	ProjectGUID="{F4843F11-D02F-43FD-A7FC-F4A131ABFE3E}"
 	RootNamespace="CommonServer"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
@@ -44,7 +44,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc;..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src"
+				AdditionalIncludeDirectories="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc;..\..\DataStructuresAndAlgorithms\SwordOffer\code\src"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -284,72 +284,36 @@
 	</References>
 	<Files>
 		<Filter
-			Name="chapter8"
-			>
-			<Filter
-				Name="inc"
-				>
-				<File
-					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter8.h"
-					>
-				</File>
-				<File
-					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter8UnitTest.h"
-					>
-				</File>
-			</Filter>
-			<Filter
-				Name="src"
-				>
-				<File
-					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter8.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter8UnitTest.cpp"
-					>
-				</File>
-			</Filter>
-		</Filter>
-		<Filter
-			Name="chapter6"
-			>
-			<Filter
-				Name="inc"
-				>
-				<File
-					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter6.h"
-					>
-				</File>
-				<File
-					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\chapter6UnitTest.h"
-					>
-				</File>
-			</Filter>
-			<Filter
-				Name="src"
-				>
-				<File
-					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter6.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\src\chapter6UnitTest.cpp"
-					>
-				</File>
-			</Filter>
-		</Filter>
-		<Filter
 			Name="inc"
 			>
 			<File
-				RelativePath="..\..\DataStructuresAndAlgorithms\SimpleDataStructure\code\inc\baseDef.h"
+				RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc\baseDef.h"
 				>
 			</File>
 		</Filter>
 		<Filter
 			Name="src"
 			>
+		</Filter>
+		<Filter
+			Name="exercise24"
+			>
+			<Filter
+				Name="inc"
+				>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc\exercise24.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="src"
+				>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\src\exercise24.cpp"
+					>
+				</File>
+			</Filter>
 		</Filter>
 	</Files>
 	<Globals>
