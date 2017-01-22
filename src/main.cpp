@@ -15,8 +15,8 @@ int main()
 
 //	SimpleDataStructuresTest::Chapter6UnitTest::PreOrderTraverse_Unit_Test();
 
-	SwordOfferUnitTest::VerifySequenceOfBST_Unit_Test();
-
+//	SwordOfferUnitTest::VerifySequenceOfBST_Unit_Test();
+	SwordOfferUnitTest::ConstructBinaryTree_Unit_Test();
 	system("Pause"); 
 
 	return 0;

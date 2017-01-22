@@ -1,9 +1,18 @@
 #include <iostream>
+
+#include <baseDefSO.h>
 #include <exerUnitTest.h>
 
 namespace SwordOfferUnitTest
 {
-	
+
+void ConstructBinaryTree_Unit_Test()
+{
+	int preOrder[] = {1,2,4,7,3,5,6,8};
+	int inOrder[] = {4,7,2,1,5,3,8,6};
+	SwordOffer::Construct(preOrder, inOrder, 8);
+}
+
 void VerifySequenceOfBST_Unit_Test()
 {
 	int arr_0[] = {5,7,6,9,11,10,8};

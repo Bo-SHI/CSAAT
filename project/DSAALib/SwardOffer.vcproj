@@ -287,7 +287,7 @@
 			Name="inc"
 			>
 			<File
-				RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc\baseDef.h"
+				RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc\baseDefSO.h"
 				>
 			</File>
 			<File
@@ -313,12 +313,20 @@
 					RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc\exercise24.h"
 					>
 				</File>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\inc\exercise6.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="src"
 				>
 				<File
 					RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\src\exercise24.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\DataStructuresAndAlgorithms\SwordOffer\code\src\exercise6.cpp"
 					>
 				</File>
 			</Filter>

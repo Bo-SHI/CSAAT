@@ -1,7 +1,7 @@
 #ifndef __SWORD_OFFER_EXERCISE_24__
 #define __SWORD_OFFER_EXERCISE_24__
 
-#include <baseDef.h>
+#include <baseDefSO.h>
 
 namespace SwordOffer
 {
