@@ -15,7 +15,8 @@ int main(int argc, char *argv[]) {
     }
 
     printf("main process is done\n");
-    return 0;
+    //return 0;
+    exit(0);
 }
 
 static void m_exit1() {
