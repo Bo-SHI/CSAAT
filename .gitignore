@@ -3,3 +3,8 @@
 *.suo
 *.ncb
 *.user
+
+*.o
+*.i
+*.s
+a.out
