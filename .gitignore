@@ -8,3 +8,4 @@
 *.i
 *.s
 a.out
+core
