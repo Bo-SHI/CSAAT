@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	config = flat.String("config", "confit.txt", "config file path")
+	config = flag.String("config", "confit.txt", "config file path")
 )
 
 var Config = struct {
