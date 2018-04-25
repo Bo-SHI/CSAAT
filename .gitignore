@@ -13,3 +13,7 @@ core
 build/
 libs/
 mordor/
+
+*.swp
+*.log
+gamesvr
