@@ -14,9 +14,10 @@ int main(int argc, char *argv[]) {
             exit(0);
         }
 
-        sleep(2);
         printf("second child process, our parent process pid = %d\n", getppid());
         exit(0);
+    } else {
+        printf("main process, create child process: %d\n", pid);
     }
 
     if (waitpid(pid, NULL, 0) != pid) {
