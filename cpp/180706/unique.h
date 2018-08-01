@@ -6,8 +6,17 @@
 #include <math.h>
 #include <stdlib.h>
 #include <sys/time.h>
+#include <time.h>
 
 namespace Note {
+
+// Init random seed on program startup
+namespace detail {
+    static class initializer {
+    public:
+        initializer() { srand((unsigned int)time(NULL)); }
+    } _init;
+}
 
 inline int randInt(int from, int to) {
     return from + rand() % (to - from);
