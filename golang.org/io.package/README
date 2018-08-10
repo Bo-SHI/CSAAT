@@ -58,8 +58,8 @@ Interface:
     ReadWriteSeeker
 
     ByteReader
-    ByteScanner
     ByteWriter
+    ByteScanner
 
     RuneReader
     RuneScanner
