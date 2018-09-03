@@ -1,0 +1,3 @@
+Functions:
+    func InterfaceAddrs() ([]Addr, error)
+    func Interfaces() ([]Interface, error)

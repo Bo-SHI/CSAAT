@@ -1,0 +1,40 @@
+// 运输层
+TCP: Transmission Control Protocol
+UDP: User Datagram Protocol
+// 网络层
+IP: Internet Protocol
+ICMP: Internet Control Message Protocol
+IGMP: Internet Group Management Protocol
+// 链路层
+ARP: Address Resolution Protocol
+RARP: Reverse Address Resolution Protocol
+
+IP地址分类:
+    A:  0.0.0.0 ~ 127.255.255.255
+    B:  128.0.0.0 ~ 191.255.255.255
+    C:  192.0.0.0 ~ 223.255.255.255
+    D:  224.0.0.0 ~ 239.255.255.255
+    E:  240.0.0.0 ~ 247.255.255.255
+
+    单播地址 (目的为单个主机)
+    广播地址 (目的端为给定网络上的所有主机)
+    多播地址 (目的端为同一组内的所有主机)
+
+DNS: Domain Name System
+    主机名与IP地址之间的映射
+
+套接字类型:
+    I 面向连接的套接字 SOCK_STREAM
+        1. 传输过程数据不会丢失
+        2. 按序传输
+        3. 传输的数据不存在数据边界
+
+        总结: 可靠的、按序传递的、基于字节的面向连接的数据传输方式套接字
+
+    II 面向消息的套接字 SOCK_DGRAM
+        1. 强调快速传输而非按序传输
+        2. 传输的数据有可能丢失或者损毁
+        3. 传输的数据有边界
+        4. 限制每次传输的数据大小
+
+        总结: 不可靠的、不安序传递的、以数据的高速传输为目的的套接字
