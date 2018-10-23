@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(BoostASIO)
+project(asio)
 
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE "Debug")
@@ -44,7 +44,7 @@ include_directories(${Boost_INCLUDE_DIRS})
 string(TOUPPER ${CMAKE_BUILD_TYPE} BUILD_TYPE)
 message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_TYPE}})
 
-set(SRCS sync_server.cpp)
-add_executable(sync_server ${SRCS})
-target_link_libraries(sync_server
+FILE(GLOB_RECURSE SRCS *.cpp)
+add_executable(timer.1 ${SRCS})
+target_link_libraries(timer.1
     ${Boost_LIBRARIES})

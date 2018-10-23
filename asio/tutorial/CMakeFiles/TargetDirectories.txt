@@ -1,0 +1,3 @@
+/home/ubuntu/workspace/note/asio/tutorial/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/workspace/note/asio/tutorial/CMakeFiles/edit_cache.dir
+/home/ubuntu/workspace/note/asio/tutorial/CMakeFiles/timer.1.dir
