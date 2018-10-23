@@ -17,3 +17,5 @@ mordor/
 *.swp
 *.log
 gamesvr
+
+/test
