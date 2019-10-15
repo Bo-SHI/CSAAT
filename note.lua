@@ -51,3 +51,23 @@ print [[
         ssh-keygen -t rsa -C "email@email.com"
         ~/.ssh/id_rsa.pub   --公钥
 ]]
+
+print [[
+    2019/10/11
+
+    -- pthread 相关
+    pthread_key_t
+    pthread_key_create
+    pthread_setspcific
+    pthread_getspcific
+]]
+
+print [[
+    shadowsocks for linux/centos
+]]
+
+print [[
+    2019/10/15
+    algorithm : binary_search
+    gdb install
+]]
