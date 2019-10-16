@@ -70,4 +70,8 @@ print [[
     2019/10/15
     algorithm : binary_search
     gdb install
+
+    LD_LIBRARY_PATH
+    gcc source.c -shared -fPIC -o object.so
+    gcc source.c -L. -llib_name -o a.out
 ]]
