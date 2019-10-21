@@ -75,3 +75,18 @@ print [[
     gcc source.c -shared -fPIC -o object.so
     gcc source.c -L. -llib_name -o a.out
 ]]
+
+print [[
+    2019/10/21
+
+    skynet 源码
+    skynet-src service-src lualib-src
+    service lualib
+
+    模块创建、代码架构
+    问题在于 如何执行的lua部分，运行过程中终止的状态(可能和线程相关)
+
+    skynet_start.c : logger snlua 两个服务回启动
+
+    启动脚本: service/bootstrap.lua
+]]
