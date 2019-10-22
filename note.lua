@@ -90,3 +90,13 @@ print [[
 
     启动脚本: service/bootstrap.lua
 ]]
+
+print [[
+    2019/10/22
+
+    top 查看cpu使用率
+    us 用户cpu使用率
+    sy 系统空间的cpu使用率
+
+    vmstat 参数: 1、时间 2、次数
+]]
