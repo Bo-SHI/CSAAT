@@ -1,5 +1,5 @@
-arg_str = "str"
-arg_int = 111
+local arg_str = "str"
+local arg_int = 111
 
 print(type(arg_str))
 print(type(arg_int))
