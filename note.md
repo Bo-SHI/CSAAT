@@ -119,7 +119,7 @@
 ### event
   
 ```
-typedef void (*event_callback_fn) (evutil_socket_t, short, void*)  
+typedef void (*event_callback_fn) (evutil_socket_t, short, void*)
 struct event* event_new(struct event_base*, evutil_socket_t, short, event_callback_fn*, void*);  
 void event_free(struct event*);
 ```
