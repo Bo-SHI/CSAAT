@@ -117,24 +117,22 @@
     event_base_foreach_event()
 
 ### event
-  
+
 ```
-typedef void (*event_callback_fn) (evutil_socket_t, short, void*)
-struct event* event_new(struct event_base*, evutil_socket_t, short, event_callback_fn*, void*);  
+typedef void (*event_callback_fn) (evutil_socket_t, short, void*);
+struct event* event_new(struct event_base*, evutil_socket_t, short, event_callback_fn*, void*);
 void event_free(struct event*);
 ```
-  
+
 ```
-#define EV_TIMEOUT      0x01  
-#define EV_READ         0x02  
-#define EV_WRITE        0x04  
-#define EV_SIGNAL       0x08  
-#define EV_PERSIST      0x10  
-#define EV_ET           0x20  
+#define EV_TIMEOUT      0x01
+#define EV_READ         0x02
+#define EV_WRITE        0x04
+#define EV_SIGNAL       0x08
+#define EV_PERSIST      0x10
+#define EV_ET           0x20
 ```
-  
+
 ```
 void* event_self_cbarg();
 ```
-  
-
