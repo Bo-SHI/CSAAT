@@ -21,3 +21,7 @@
 
 > ssh-keygen -t rsa -C "email@email.com" -- 生成ssh key  
 > /home/username/.ssh/id_rsa.pub -- 公钥
+
+### 常用工具
+> vim  
+> screen  
